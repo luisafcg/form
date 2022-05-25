@@ -7,7 +7,7 @@ pipeline {
  
     stages {
  
-        stage('Cypress Parallel Test Suite') {
+        stage('Cypress Parallel Test Suites') {
             parallel {
                 stage('Slave 1') {
                     agent {
