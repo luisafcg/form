@@ -22,26 +22,26 @@ pipeline {
  
                 stage('Slave 2') {
                     agent {
-                        label "Agente2_1"
+                        label "Agente2_2"
                     }
                     steps {
-                        git url: 'https://github.com/RodrigoUdemy/Paralelo_pipline.git'
+                         git url: 'https://github.com/luisafcg/form.git'
                         bat 'npm install'
                         bat 'npm update'                       
-                        bat 'npx cypress run cypress run --record --key 7f3ad08e-6c6e-442f-bcbd-cb3269ac5a9c  --parallel'
+                        bat 'npx cypress run --record --key 234dc415-7780-44ee-a14a-276c8b32d788 --parallel'
                     
                     }
                 }
  
                 stage('Slave 3') {
                     agent {
-                        label "Agente2_2"
+                        label "Agente2_3"
                     }
                     steps {
-                       git url: 'https://github.com/RodrigoUdemy/Paralelo_pipline.git'
+                       git url: 'https://github.com/luisafcg/form.git'
                         bat 'npm install'
                         bat 'npm update'                       
-                        bat 'npx cypress run cypress run --record --key 7f3ad08e-6c6e-442f-bcbd-cb3269ac5a9c  --parallel'
+                        bat 'npx cypress run --record --key 234dc415-7780-44ee-a14a-276c8b32d788 --parallel'
                     
                     }
                 }
@@ -51,10 +51,10 @@ pipeline {
                         label "Agent2_4"
                     }
                     steps {
-                        git url: 'https://github.com/RodrigoUdemy/Paralelo_pipline.git'
+                        git url: 'https://github.com/luisafcg/form.git'
                         bat 'npm install'
                         bat 'npm update'                       
-                        bat 'npx cypress run cypress run --record --key 7f3ad08e-6c6e-442f-bcbd-cb3269ac5a9c  --parallel'
+                        bat 'npx cypress run --record --key 234dc415-7780-44ee-a14a-276c8b32d788 --parallel'
                     
                     }
                 }
