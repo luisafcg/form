@@ -1,1 +1,7 @@
-{}
+{
+  "viewportWidth": 1700,
+  "viewportHeight": 800,
+  "pageLoadTimeout": 60000,
+  "testFiles": "**/*.feature",
+  "projectId": "1wkg19"
+}
